@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RunConCola</string>
+
+    <string name="button_temporal">Change Activity</string>
 </resources>
