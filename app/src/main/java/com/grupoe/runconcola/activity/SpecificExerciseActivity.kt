@@ -2,7 +2,6 @@ package com.grupoe.runconcola.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.grupoe.runconcola.databinding.ActivityMainBinding
 import com.grupoe.runconcola.databinding.ActivitySpecificExerciseBinding
 
 class SpecificExerciseActivity : AppCompatActivity() {

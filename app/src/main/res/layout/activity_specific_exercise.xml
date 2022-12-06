@@ -5,15 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#2E2D2D"
     tools:context=".activity.SpecificExerciseActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/arms_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/excersice_arms"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="30dp"
+            android:background="#009688"/>
+
+        <ImageView
+            android:id="@+id/amrs_image_one"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:src="@drawable/arms1"
+            app:layout_constraintStart_toStartOf="@+id/arms_one"
+            app:layout_constraintEnd_toEndOf="@+id/arms_one"
+            app:layout_constraintTop_toTopOf="@+id/arms_one"/>
+
+        <TextView
+            android:id="@+id/arms_excersice_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/triceps_extension"
+            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintBottom_toBottomOf="@+id/amrs_image_one"/>
+
+        <TextView
+            android:id="@+id/num_sets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="@string/sets"
+            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/arms_excersice_one"/>
+
+        <TextView
+            android:id="@+id/num_repetition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="@string/repetitions"
+            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/num_sets"/>
+
+        <Button
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_time_button"
+            android:backgroundTint="#27DD30"
+            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition"
+            android:layout_margin="17dp"/>
+
+        <TextView
+            android:id="@+id/texto_temporal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aqui deberia ir el temporizador"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/start_time"/>
+
+        <Button
+            android:id="@+id/show_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description_button"
+            android:backgroundTint="#27DD30"
+            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/texto_temporal"
+            android:layout_margin="15dp"/>
+        
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
