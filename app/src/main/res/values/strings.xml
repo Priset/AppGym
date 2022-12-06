@@ -2,4 +2,11 @@
     <string name="app_name">RunConCola</string>
 
     <string name="button_temporal">Change Activity</string>
+
+    <string name="excersice_arms">Brazos</string>
+    <string name="triceps_extension">Extensiones de tríceps en polea con cuerda</string>
+    <string name="sets">3 series</string>
+    <string name="repetitions">12 repeticiones</string>
+    <string name="start_time_button">Comenzar</string>
+    <string name="description_button">Descripción</string>
 </resources>
