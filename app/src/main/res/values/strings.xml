@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">RunConCola</string>
 
-    <string name="button_temporal">Change Activity</string>
+    <string name="button_into_login">Login</string>
+    <string name="enter_data">Ingresa tus datos:</string>
+    <string name="name">Nombre Completo:</string>
 </resources>
