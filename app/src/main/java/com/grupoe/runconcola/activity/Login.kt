@@ -1,10 +1,10 @@
 package com.grupoe.runconcola.activity
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.grupoe.runconcola.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -13,10 +13,5 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-        binding.buttonOne.setOnClickListener{
-            val intent  = Intent(this, SpecificExerciseActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
