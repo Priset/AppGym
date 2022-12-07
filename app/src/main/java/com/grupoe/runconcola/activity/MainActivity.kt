@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonOne.setOnClickListener{
-            val intent  = Intent(this, Login::class.java)
+            val intent  = Intent(this, SpecificExerciseActivity::class.java)
             startActivity(intent)
         }
     }

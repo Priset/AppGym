@@ -11,5 +11,6 @@
     <string name="sets">3 series</string>
     <string name="repetitions">12 repeticiones</string>
     <string name="start_time_button">Comenzar</string>
-    <string name="description_button">Descripción</string>
+    <string name="description_button">¿Como hacerlo?</string>
+    <string name="next">Siguiente</string>
 </resources>
