@@ -16,6 +16,8 @@
     <string name="email">Correo electrónico:</string>
     <string name="new_email">Nuevo Correo</string>
 
+    <string name="option_select">Pierna</string>
+
     <string name="excersice_arms">Brazos</string>
     <string name="triceps_extension">Extensiones de tríceps en polea con cuerda</string>
     <string name="sets">3 series</string>
