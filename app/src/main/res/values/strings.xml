@@ -2,9 +2,19 @@
     <string name="app_name">RunConCola</string>
 
     <string name="button_into_login">Login</string>
+    <string name="button_temporal">Change Activity</string>
+    <string name="button_to_options">Continuar:</string>
     <string name="enter_data">Ingresa tus datos:</string>
     <string name="name">Nombre Completo:</string>
-    <string name="button_temporal">Change Activity</string>
+    <string name="new_name">Nuevo Nombre</string>
+    <string name="age">Edad:</string>
+    <string name="new_age">Nueva Edad</string>
+    <string name="height">Estatura:</string>
+    <string name="new_height">Nuevo Estatura</string>
+    <string name="weight">Peso:</string>
+    <string name="new_weight">Nuevo Peso</string>
+    <string name="email">Correo electrónico:</string>
+    <string name="new_email">Nuevo Correo</string>
 
     <string name="excersice_arms">Brazos</string>
     <string name="triceps_extension">Extensiones de tríceps en polea con cuerda</string>
