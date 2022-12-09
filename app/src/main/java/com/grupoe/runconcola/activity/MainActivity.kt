@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.buttonOne.setOnClickListener{
-            val intent  = Intent(this, SpecificExerciseActivity::class.java)
+        binding.buttonLogin.setOnClickListener{
+            val intent  = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }

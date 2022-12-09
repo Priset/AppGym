@@ -5,29 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="#009688"
+    android:background="#771811"
     tools:context=".activity.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/logo2"
-        android:layout_margin="10dp"/>
+        android:layout_height="180dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo2" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/muscleman"
-        android:layout_margin="10dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/muscleman5" />
 
-    <Button
-        android:id="@+id/button_one"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#27DD30"
+        android:backgroundTint="#FAA01B"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="30dp"
         android:text="@string/button_into_login"
-        android:textColor="@color/white"
-        android:layout_margin="40dp"/>
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white" />
 
 </LinearLayout>
