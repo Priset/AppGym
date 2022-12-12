@@ -31,11 +31,11 @@
     <dimen name="X500X">500dp</dimen>
 
     <!--sp-->
-    <dimen name="$19$">19sp</dimen>
-    <dimen name="$20$">20sp</dimen>
-    <dimen name="$22$">22sp</dimen>
-    <dimen name="$25$">25sp</dimen>
-    <dimen name="$30$">30sp</dimen>
-    <dimen name="$40$">40sp</dimen>
-    <dimen name="$50$">50sp</dimen>
+    <dimen name="S19S">19sp</dimen>
+    <dimen name="S20S">20sp</dimen>
+    <dimen name="S22S">22sp</dimen>
+    <dimen name="S25S">25sp</dimen>
+    <dimen name="S30S">30sp</dimen>
+    <dimen name="S40S">40sp</dimen>
+    <dimen name="S50S">50sp</dimen>
 </resources>
