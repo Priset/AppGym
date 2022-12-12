@@ -1,221 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="#2E2D2D"
     tools:context=".activity.Login">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/text_login_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/X50X"
+        android:layout_marginBottom="@dimen/X80X"
+        android:textSize="@dimen/S40S"
+        android:text="@string/login_view"
+        android:textStyle="bold"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/edit_text_email_login"
+        android:layout_width="@dimen/X300X"
+        android:layout_height="@dimen/X80X"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="@string/email_login"
+        android:textColorHint="@color/white"
+        android:maxLength="45"
+        android:textSize="@dimen/S19S"
+        android:background="@drawable/button_style3"
+        android:textColor="@color/white"/>
 
-            <TextView
-                android:id="@+id/text_enter_data"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="@color/white"
-                android:layout_marginTop="30dp"
-                android:textSize="22dp"
-                android:text="@string/enter_data"/>
+    <EditText
+        android:id="@+id/edit_text_password_login"
+        android:layout_width="@dimen/X300X"
+        android:layout_height="@dimen/X80X"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:hint="@string/password_login"
+        android:textColorHint="@color/white"
+        android:maxLength="45"
+        android:textSize="@dimen/S19S"
+        android:layout_marginTop="@dimen/X25X"
+        android:background="@drawable/button_style3"
+        android:textColor="@color/white"/>
 
-            <View
-                android:id="@+id/view_line_title"
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                app:layout_constraintTop_toBottomOf="@id/text_enter_data"
-                android:background="@color/white"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="95dp"
-                android:layout_marginEnd="95dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_to_options"
+        android:layout_width="@dimen/X200X"
+        android:layout_height="@dimen/X80X"
+        android:layout_marginTop="@dimen/X70X"
+        android:text="@string/button_login"
+        android:textStyle="bold"
+        android:textSize="@dimen/S19S"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/button_style3"
+        android:textColor="@color/white" />
 
-            <TextView
-                android:id="@+id/text_name"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                app:layout_constraintTop_toTopOf="@id/view_line_title"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="@color/black"
-                android:background="#4CAF50"
-                android:layout_marginTop="30dp"
-                android:textSize="22dp"
-                android:text="@string/name"/>
-
-            <EditText
-                android:id="@+id/edit_text_number"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="@string/new_name"
-                android:maxLength="45"
-                android:textSize="19dp"
-                app:layout_constraintTop_toBottomOf="@+id/text_name"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:background="#68B5F3"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/text_age"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                app:layout_constraintTop_toBottomOf="@id/edit_text_number"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="@color/black"
-                android:background="#4CAF50"
-                android:layout_marginTop="35dp"
-                android:textSize="22dp"
-                android:text="@string/age"/>
-
-            <EditText
-                android:id="@+id/edit_text_age"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="@string/new_age"
-                android:maxLength="45"
-                android:textSize="19dp"
-                app:layout_constraintTop_toBottomOf="@+id/text_age"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:background="#68B5F3"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/text_height"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                app:layout_constraintTop_toBottomOf="@id/edit_text_age"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="@color/black"
-                android:background="#4CAF50"
-                android:layout_marginTop="35dp"
-                android:textSize="22dp"
-                android:text="@string/height"/>
-
-            <EditText
-                android:id="@+id/edit_text_height"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="@string/new_height"
-                android:maxLength="45"
-                android:textSize="19dp"
-                app:layout_constraintTop_toBottomOf="@+id/text_height"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:background="#68B5F3"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/text_weight"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                app:layout_constraintTop_toBottomOf="@id/edit_text_height"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="@color/black"
-                android:background="#4CAF50"
-                android:layout_marginTop="35dp"
-                android:textSize="22dp"
-                android:text="@string/weight"/>
-
-            <EditText
-                android:id="@+id/edit_text_weight"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="@string/new_weight"
-                android:maxLength="45"
-                android:textSize="19dp"
-                app:layout_constraintTop_toBottomOf="@+id/text_weight"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:background="#68B5F3"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/text_email"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                app:layout_constraintTop_toBottomOf="@id/edit_text_weight"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:textColor="@color/black"
-                android:background="#4CAF50"
-                android:layout_marginTop="35dp"
-                android:textSize="22dp"
-                android:text="@string/email"/>
-
-            <EditText
-                android:id="@+id/edit_text_email"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="@string/new_email"
-                android:maxLength="45"
-                android:textSize="19dp"
-                app:layout_constraintTop_toBottomOf="@+id/text_email"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="25dp"
-                android:background="#68B5F3"
-                android:textColor="@color/black"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_to_options"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/edit_text_email"
-                app:layout_constraintRight_toLeftOf="@id/logo_to_option"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="10dp"
-                android:text="@string/button_to_options"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:backgroundTint="#009688"
-                android:background="@drawable/button_style"
-                android:textColor="@color/white" />
-
-            <ImageView
-                android:id="@+id/logo_to_option"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/exit"
-                android:scaleType="centerCrop"
-                app:layout_constraintTop_toBottomOf="@+id/edit_text_email"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

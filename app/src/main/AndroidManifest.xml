@@ -21,12 +21,28 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".activity.armsActivity.ExerciseArmsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
             android:name=".activity.AvailableOptionsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".activity.Login"
             android:exported="false">
@@ -47,6 +63,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".activity.SpecificExerciseActivity"
             android:exported="false">

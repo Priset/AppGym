@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#2E2D2D"
-    tools:context=".activity.SpecificExerciseActivity">
+    tools:context=".activity.armsActivity.ExerciseArmsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:id="@+id/arms_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/excersice_arms"
+            android:text="@string/exercise_arms"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold"
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:text="@string/triceps_extension"
             android:textStyle="bold"
             android:layout_marginEnd="90dp"
@@ -83,23 +83,11 @@
             android:textStyle="italic"
             android:backgroundTint="#4CAF50"
             android:background="@drawable/button_style2"
-            android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/num_repetition"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
             android:padding="6dp"/>
-
-        <TextView
-            android:id="@+id/texto_temporal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="aqui deberia ir el temporizador"
-            android:textColor="@color/white"
-            android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/start_time"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/show_description"
@@ -109,12 +97,12 @@
             android:textStyle="italic"
             android:backgroundTint="#4CAF50"
             android:background="@drawable/button_style2"
-            android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/texto_temporal"
-            android:layout_marginTop="10dp"
-            android:padding="5dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:onClick="clickDescriptionArmosOne"/>
 
         <ImageButton
             android:id="@+id/button_exit"
@@ -140,7 +128,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:onClick="exerciseTwo"/>
+
+        <ProgressBar
+            android:id="@+id/time_bar"
+            android:layout_width="350dp"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/button_exit"
+            android:layout_marginBottom="100dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
