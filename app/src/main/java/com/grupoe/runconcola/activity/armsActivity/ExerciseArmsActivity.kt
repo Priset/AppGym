@@ -47,8 +47,9 @@ class ExerciseArmsActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    fun clickDescriptionArmosOne(view: View){
+    fun clickDescriptionArmsOne(view: View){
         val desc1 = descritionArms()
+
     }
 
 }
