@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--dp-->
+    <dimen name="X1X">1dp</dimen>
+    <dimen name="X3X">3dp</dimen>
+    <dimen name="X5X">5dp</dimen>
+    <dimen name="X10X">10dp</dimen>
+    <dimen name="X25X">25dp</dimen>
+    <dimen name="X30X">30dp</dimen>
+    <dimen name="X35X">35dp</dimen>
+    <dimen name="X40X">40dp</dimen>
+    <dimen name="X50X">50dp</dimen>
+    <dimen name="X80X">80dp</dimen>
+    <dimen name="X70X">70dp</dimen>
+    <dimen name="X95X">95dp</dimen>
+    <dimen name="X110X">110dp</dimen>
+    <dimen name="X170X">170dp</dimen>
+    <dimen name="X180X">180dp</dimen>
+    <dimen name="X200X">200dp</dimen>
+    <dimen name="X280X">280dp</dimen>
+    <dimen name="X300X">300dp</dimen>
+
+    <!--sp-->
+    <dimen name="$22$">22sp</dimen>
+    <dimen name="$19$">19sp</dimen>
+    <dimen name="$40$">40sp</dimen>
+
+</resources>

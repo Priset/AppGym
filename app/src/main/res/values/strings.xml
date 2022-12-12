@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">RunConCola</string>
 
-    <string name="button_into_login">Login</string>
+    <string name="button_into_login">Iniciar sesión</string>
+    <string name="button_into_register">Registrarse</string>
     <string name="button_temporal">Change Activity</string>
-    <string name="button_to_options">Continuar:</string>
+    <string name="button_register">Registrarse:</string>
     <string name="enter_data">Ingresa tus datos:</string>
     <string name="name">Nombre Completo:</string>
     <string name="new_name">Nuevo Nombre</string>
@@ -15,6 +16,16 @@
     <string name="new_weight">Nuevo Peso</string>
     <string name="email">Correo electrónico:</string>
     <string name="new_email">Nuevo Correo</string>
+    <string name="password">Contraseña:</string>
+    <string name="new_password">Nueva Contraseña</string>
+    <string name="gender">Género:</string>
+    <string name="masculine_option">Masculino</string>
+    <string name="female_option">Femenino</string>
+    <string name="other_option">Otro</string>
+    <string name="login_view">Bienvenido a GYMToma2</string>
+    <string name="email_login">Correo electrónico</string>
+    <string name="password_login">Contraseña</string>
+    <string name="button_login">Iniciar sesión</string>
 
     <string name="option_select">Pierna</string>
 
