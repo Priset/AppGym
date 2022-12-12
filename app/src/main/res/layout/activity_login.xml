@@ -17,7 +17,7 @@
         android:textColor="@color/white"
         android:layout_marginTop="@dimen/X50X"
         android:layout_marginBottom="@dimen/X80X"
-        android:textSize="@dimen/$40$"
+        android:textSize="@dimen/S40S"
         android:text="@string/login_view"
         android:textStyle="bold"/>
 
@@ -30,7 +30,7 @@
         android:hint="@string/email_login"
         android:textColorHint="@color/white"
         android:maxLength="45"
-        android:textSize="@dimen/$19$"
+        android:textSize="@dimen/S19S"
         android:background="@drawable/button_style3"
         android:textColor="@color/white"/>
 
@@ -43,7 +43,7 @@
         android:hint="@string/password_login"
         android:textColorHint="@color/white"
         android:maxLength="45"
-        android:textSize="@dimen/$19$"
+        android:textSize="@dimen/S19S"
         android:layout_marginTop="@dimen/X25X"
         android:background="@drawable/button_style3"
         android:textColor="@color/white"/>
@@ -55,7 +55,7 @@
         android:layout_marginTop="@dimen/X70X"
         android:text="@string/button_login"
         android:textStyle="bold"
-        android:textSize="@dimen/$19$"
+        android:textSize="@dimen/S19S"
         android:layout_gravity="center"
         android:gravity="center"
         android:background="@drawable/button_style3"

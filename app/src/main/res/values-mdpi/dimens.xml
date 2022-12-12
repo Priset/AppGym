@@ -22,8 +22,8 @@
     <dimen name="X300X">300dp</dimen>
 
     <!--sp-->
-    <dimen name="$22$">22sp</dimen>
-    <dimen name="$19$">19sp</dimen>
-    <dimen name="$40$">40sp</dimen>
+    <dimen name="S22S">22sp</dimen>
+    <dimen name="S19S">19sp</dimen>
+    <dimen name="S40S">40sp</dimen>
 
 </resources>
