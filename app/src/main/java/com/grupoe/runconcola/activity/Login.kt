@@ -17,17 +17,14 @@ class Login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
         setup()
 
-        /*
-        binding.buttonToOptions.setOnClickListener{
-            val intent  = Intent(this, SpecificExerciseActivity::class.java)
-            startActivity(intent)
-        }
-        */
+
+
     }
 
-    private fun setup(){
+        private fun setup(){
         button_to_options.setOnClickListener {
             if (edit_text_email_login.text.isNotEmpty() && edit_text_password_login.text.isNotEmpty()){
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(edit_text_email_login.text.toString(),
@@ -52,8 +49,13 @@ class Login : AppCompatActivity() {
     }
 
     private fun showOptions(){
-        val loginIntent = Intent(this,activity_AvailableOptions::class.java).apply {
+        val loginIntent = Intent(this,OptionsRecycleActivity::class.java).apply {
         }
         startActivity(loginIntent)
     }
+
+
+
+
 }
+
