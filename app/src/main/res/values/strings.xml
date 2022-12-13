@@ -26,6 +26,8 @@
     <string name="email_login">Correo electrónico</string>
     <string name="password_login">Contraseña</string>
     <string name="button_login">Iniciar sesión</string>
+    <string name="note_title">Gym Notes</string>
+    <string name="add_note">Añadir Nueva Nota</string>
 
     <string name="title_nutritional_table">Tabla Nutricional</string>
     <string name="button_calculate">Calcular</string>
@@ -50,6 +52,8 @@
     <string name="back">Atras</string>
 
     <string name="hello_blank_fragment">Holi</string>
+
+    <string name="prefs_file" translatable="false">com.grupoe.runconcola.activity.PREFERENCE_FILE_KEY</string>
 
 
 </resources>
