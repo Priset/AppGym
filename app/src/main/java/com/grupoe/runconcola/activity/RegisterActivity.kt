@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isEmpty
 import com.google.firebase.auth.FirebaseAuth
-import com.grupoe.runconcola.databinding.ActivityMainBinding
 import com.grupoe.runconcola.databinding.ActivityRegisterBinding
 import kotlinx.android.synthetic.main.activity_register.*
 
