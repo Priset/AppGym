@@ -25,9 +25,12 @@ class OptionsRecycleActivity : AppCompatActivity() {
     fun setRecyclerView(){
         val mutablelist = mutableListOf<Muscle>(
             Muscle("Pierna", R.drawable.pierna_day),
+            Muscle("Brazo", R.drawable.arm_exercises),
             Muscle("Pecho", R.drawable.chest_day),
             Muscle("Espalda", R.drawable.back_day),
-            Muscle("Brazo", R.drawable.arm_exercises)
+            Muscle("Tabla Nutricional", R.drawable.food_table),
+
+
         )
 
 

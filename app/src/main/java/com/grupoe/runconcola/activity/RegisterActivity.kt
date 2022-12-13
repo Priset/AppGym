@@ -21,11 +21,11 @@ class RegisterActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        /*
+
         binding.buttonRegister.setOnClickListener{
             val intent  = Intent(this, Login::class.java)
             startActivity(intent)
-        }*/
+        }
 
         setup()
         emptyValues()
