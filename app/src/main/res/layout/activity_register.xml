@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#2E2D2D"
+    android:background="@color/background_one"
     tools:context=".activity.Login">
 
     <ScrollView
@@ -16,7 +16,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/text_enter_data"
@@ -167,7 +167,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textColor="@color/black"
                 android:background="@color/button_one"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="@dimen/X35X"
                 android:textSize="@dimen/S22S"
                 android:text="@string/email"/>
 
@@ -245,6 +245,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/S19S"
                     android:text="@string/masculine_option"
+                    android:checked="true"
                     android:textColor="@color/black"/>
 
                 <RadioButton
