@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.grupoe.runconcola.R
+import com.grupoe.runconcola.activity.legsActivity.ExerciseLegsActivity
 import com.grupoe.runconcola.databinding.ActivityAvailableOptionsBinding
+import com.grupoe.runconcola.databinding.ActivityExerciseLegsBinding
 import com.grupoe.runconcola.databinding.ActivityLoginBinding
 
 class AvailableOptionsActivity : AppCompatActivity() {
@@ -20,7 +22,7 @@ class AvailableOptionsActivity : AppCompatActivity() {
     }
 
     fun Leg(view: View) {
-        val legview = Intent(this,SpecificExerciseActivity::class.java)
+        val legview = Intent(this,ExerciseLegsActivity::class.java)
         startActivity(legview)
     }
 }

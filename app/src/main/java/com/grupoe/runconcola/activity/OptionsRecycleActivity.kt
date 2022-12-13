@@ -1,10 +1,12 @@
 package com.grupoe.runconcola.activity
 
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.grupoe.runconcola.R
 import com.grupoe.runconcola.adapter.AvailableOptionsAdapter
+import com.grupoe.runconcola.dataClasses.Muscle
 import com.grupoe.runconcola.databinding.ActivityOptionsRecycleBinding
 
 class OptionsRecycleActivity : AppCompatActivity() {
@@ -21,13 +23,15 @@ class OptionsRecycleActivity : AppCompatActivity() {
         setRecyclerView()
     }
     fun setRecyclerView(){
-        val mutablelist = mutableListOf<String>()
-        mutablelist.add("Pierna")
-        mutablelist.add("Brazo")
-        mutablelist.add("Pecho")
-        mutablelist.add("Espalda")
-        mutablelist.add("Tabla Nutricional")
-        mutablelist.add("Gym Notes")
+        val mutablelist = mutableListOf<Muscle>(
+            Muscle("Pierna", R.drawable.pierna_day),
+            Muscle("Pecho", R.drawable.chest_day),
+            Muscle("Espalda", R.drawable.back_day),
+            Muscle("Brazo", R.drawable.arm_exercises)
+        )
+
+
+
 
         availableOptionsAdapter.addOptions(mutablelist)
 
