@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background_one"
-    tools:context=".activity.armsActivity.ExerciseArmsActivity">
+    tools:context=".activity.backActivity.ExerciseBackActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/arms_one"
+            android:id="@+id/back_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/exercise_arms"
+            android:text="@string/exercise_back"
             android:textColor="@color/white"
             android:textSize="@dimen/S50S"
             android:textStyle="bold"
@@ -27,16 +27,16 @@
             android:backgroundTint="@color/button_three"/>
 
         <ImageView
-            android:id="@+id/amrs_image_one"
+            android:id="@+id/back_image_one"
             android:layout_width="@dimen/X500X"
             android:layout_height="@dimen/X400X"
             android:scaleType="fitStart"
             android:src="@drawable/arms1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/arms_one"/>
+            app:layout_constraintTop_toTopOf="@+id/back_one"/>
 
         <TextView
-            android:id="@+id/arms_excersice_one"
+            android:id="@+id/back_excersice_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -44,9 +44,9 @@
             android:text="@string/triceps_extension"
             android:textStyle="bold"
             android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintBottom_toBottomOf="@+id/amrs_image_one"/>
+            app:layout_constraintStart_toStartOf="@+id/back_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/back_image_one"
+            app:layout_constraintBottom_toBottomOf="@+id/back_image_one"/>
 
         <TextView
             android:id="@+id/num_sets"
@@ -57,9 +57,9 @@
             android:text="@string/sets"
             android:textStyle="bold"
             android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/arms_excersice_one"/>
+            app:layout_constraintStart_toStartOf="@+id/back_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/back_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/back_excersice_one"/>
 
         <TextView
             android:id="@+id/num_repetition"
@@ -70,8 +70,8 @@
             android:textStyle="bold"
             android:text="@string/repetitions"
             android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
+            app:layout_constraintStart_toStartOf="@+id/back_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/back_image_one"
             app:layout_constraintTop_toBottomOf="@+id/num_sets"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -102,7 +102,7 @@
             android:layout_marginEnd="@dimen/X50X"
             android:layout_marginTop="@dimen/X30X"
             android:padding="@dimen/X5X"
-            android:onClick="clickDescriptionArmsOne"/>
+            android:onClick="clickDescriptionArmosOne"/>
 
         <ImageButton
             android:id="@+id/button_exit"

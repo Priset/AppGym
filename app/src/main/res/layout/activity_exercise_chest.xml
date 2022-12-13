@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background_one"
-    tools:context=".activity.armsActivity.ExerciseArmsActivity">
+    tools:context=".activity.chestActivity.ExerciseChestActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -102,7 +102,7 @@
             android:layout_marginEnd="@dimen/X50X"
             android:layout_marginTop="@dimen/X30X"
             android:padding="@dimen/X5X"
-            android:onClick="clickDescriptionArmsOne"/>
+            android:onClick="clickDescriptionArmosOne"/>
 
         <ImageButton
             android:id="@+id/button_exit"
