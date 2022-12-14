@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_one"
+    android:padding="@dimen/X20X"
+    tools:context=".activity.AddNoteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text_notes"
+        android:text="@string/title_notes"
+        android:textColor="@color/white"
+        android:textSize="@dimen/S25S"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="@dimen/X20X"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/X10X"
+        android:layout_margin="@dimen/X10X"
+        android:background="@drawable/button_style4">
+
+        <EditText
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_notes"
+            android:background="@color/background_two"
+            android:padding="@dimen/X10X"
+            android:layout_margin="@dimen/X10X"
+            android:lines="2"/>
+
+        <EditText
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_notes"
+            android:background="@color/background_two"
+            android:padding="@dimen/X10X"
+            android:layout_margin="@dimen/X10X"
+            android:lines="10"
+            android:gravity="top"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_save_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_note"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/main_button"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="@dimen/X20X"/>
+
+</LinearLayout>

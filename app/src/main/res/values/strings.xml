@@ -11,9 +11,9 @@
     <string name="age">Edad:</string>
     <string name="new_age">Nueva Edad</string>
     <string name="height">Estatura:</string>
-    <string name="new_height">Nuevo Estatura</string>
+    <string name="new_height">Nuevo Estatura (cm)</string>
     <string name="weight">Peso:</string>
-    <string name="new_weight">Nuevo Peso</string>
+    <string name="new_weight">Nuevo Peso (kg)</string>
     <string name="email">Correo electrónico:</string>
     <string name="new_email">Nuevo Correo</string>
     <string name="password">Contraseña:</string>
@@ -31,6 +31,11 @@
 
     <string name="title_nutritional_table">Tabla Nutricional</string>
     <string name="button_calculate">Calcular</string>
+
+    <string name="title_notes">Añade una nueva Nota</string>
+    <string name="date_notes">Fecha:</string>
+    <string name="description_notes">Descripción:</string>
+    <string name="save_note">Guardar:</string>
 
     <string name="option_select">Pierna</string>
 

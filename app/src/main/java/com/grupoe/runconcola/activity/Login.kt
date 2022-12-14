@@ -52,7 +52,7 @@ class Login : AppCompatActivity() {
     }
 
     private fun showOptions(){
-        val loginIntent = Intent(this,GymNotesActivity::class.java).apply {
+        val loginIntent = Intent(this,OptionsRecycleActivity::class.java).apply {
         }
         startActivity(loginIntent)
     }

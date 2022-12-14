@@ -21,7 +21,7 @@ class GymNotesActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonAddNote.setOnClickListener{
-            val intent  = Intent(this, Login::class.java)
+            val intent  = Intent(this, AddNoteActivity::class.java)
             startActivity(intent)
         }
 
