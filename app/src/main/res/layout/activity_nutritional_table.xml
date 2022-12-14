@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_one"
+    tools:context=".activity.NutritionalTableActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_nutritional_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/X30X"
+                android:textSize="@dimen/S22S"
+                android:text="@string/title_nutritional_table"/>
+
+            <View
+                android:id="@+id/view_line_title2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/X3X"
+                app:layout_constraintTop_toBottomOf="@id/text_nutritional_table"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/X3X"
+                android:layout_marginStart="@dimen/X95X"
+                android:layout_marginEnd="@dimen/X95X" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_calculate"
+                android:layout_width="@dimen/X110X"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/view_line_title2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/X20X"
+                android:layout_marginEnd="@dimen/X5X"
+                android:layout_marginBottom="@dimen/X10X"
+                android:text="@string/button_calculate"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/button_three"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

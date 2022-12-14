@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.grupoe.runconcola.databinding.ActivityLoginBinding
-import com.grupoe.runconcola.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_login.*
 
 class Login : AppCompatActivity() {
