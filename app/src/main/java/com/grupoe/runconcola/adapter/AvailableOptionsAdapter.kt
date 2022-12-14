@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.grupoe.runconcola.activity.GymNotesActivity
 import com.grupoe.runconcola.activity.OptionsRecycleActivity
 import com.grupoe.runconcola.activity.armsActivity.ExerciseArmsActivity
 import com.grupoe.runconcola.activity.backActivity.ExerciseBackActivity
+import com.grupoe.runconcola.activity.chestActivity.ExerciseChestActivity
 import com.grupoe.runconcola.activity.legsActivity.ExerciseLegsActivity
 import com.grupoe.runconcola.dataClasses.Muscle
 import com.grupoe.runconcola.databinding.ItemAvailableOptionsBinding
@@ -38,14 +40,23 @@ class AvailableOptionsAdapter: RecyclerView.Adapter<AvailableOptionsAdapter.Avai
             binding.exerciseName.text = data.type
             binding.itemOption.setImageResource(data.image)
             binding.card1.setOnClickListener{
-                val intent = Intent(context,ExerciseLegsActivity::class.java)
-                //intent.putExtra("change", ExerciseBackActivity.)
+
+                lateinit var intent:Intent
+                when (absoluteAdapterPosition) {
+                    0 -> intent = Intent(context,ExerciseLegsActivity::class.java)
+                    1 -> intent = Intent(context,ExerciseArmsActivity::class.java)
+                    2 -> intent = Intent(context,ExerciseBackActivity::class.java)
+                    3 -> intent = Intent(context,ExerciseChestActivity::class.java)
+                    4 -> intent = Intent(context,GymNotesActivity::class.java)
+                    5 -> intent = Intent(context,ExerciseArmsActivity::class.java)
+
+
+                }
                 context?.startActivity(intent)
             }
 
         }
     }
-
 
         fun addOptions(list: MutableList<Muscle>){
             availableOptions.clear()
