@@ -2,12 +2,14 @@
 
 <resources>
     <!--dp-->
+    <dimen name="X0X">0dp</dimen>
     <dimen name="X1X">1dp</dimen>
     <dimen name="X3X">3dp</dimen>
     <dimen name="X5X">5dp</dimen>
     <dimen name="X6X">6dp</dimen>
     <dimen name="X10X">10dp</dimen>
     <dimen name="X12X">12dp</dimen>
+    <dimen name="X18X">18dp</dimen>
     <dimen name="X20X">20dp</dimen>
     <dimen name="X25X">25dp</dimen>
     <dimen name="X30X">30dp</dimen>
