@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".activity.OptionsRecycleActivity"
-    android:background="@drawable/fondo_pesas">
+    android:background="@drawable/fondo_opcional">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_exercise"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/activity_available_options"/>
+        tools:listitem="@layout/item_available_options"/>
 
 
 
