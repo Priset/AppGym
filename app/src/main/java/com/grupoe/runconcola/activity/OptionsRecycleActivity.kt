@@ -30,8 +30,6 @@ class OptionsRecycleActivity : AppCompatActivity() {
             Muscle("Espalda", R.drawable.back_day),
             Muscle("Tabla Nutricional", R.drawable.nutritional_table),
             Muscle("Gym Notes",R.drawable.gymnotes)
-
-
         )
 
 
