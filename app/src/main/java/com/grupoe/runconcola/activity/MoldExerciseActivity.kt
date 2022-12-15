@@ -16,7 +16,7 @@ class MoldExerciseActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonExit.setOnClickListener {
-            val intent = Intent(this,AvailableOptionsActivity::class.java)
+            val intent = Intent(this,OptionsRecycleActivity::class.java)
             startActivity(intent)
         }
     }

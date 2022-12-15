@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import com.grupoe.runconcola.activity.OptionsRecycleActivity
 import com.grupoe.runconcola.dataClasses.Exercise
 import com.grupoe.runconcola.databinding.ActivityExerciseArmsBinding
 
@@ -19,7 +20,7 @@ class ExerciseArmsActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.buttonExitArms.setOnClickListener {
-            val intent = Intent(this,::class.java)
+            val intent = Intent(this,OptionsRecycleActivity::class.java)
             startActivity(intent)
         }
     }

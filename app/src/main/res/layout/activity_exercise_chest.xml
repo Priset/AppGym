@@ -29,7 +29,6 @@
             android:id="@+id/chest_image_one"
             android:layout_width="@dimen/X500X"
             android:layout_height="@dimen/X400X"
-            android:scaleType="fitStart"
             android:src="@drawable/chest1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/chest_one"/>
@@ -100,7 +99,8 @@
             app:layout_constraintTop_toBottomOf="@+id/num_repetition_chest"
             android:layout_marginEnd="@dimen/X50X"
             android:layout_marginTop="@dimen/X30X"
-            android:padding="@dimen/X5X"/>
+            android:padding="@dimen/X5X"
+            android:onClick="clickDescriptionChestOne"/>
 
         <ImageButton
             android:id="@+id/button_exit_chest"

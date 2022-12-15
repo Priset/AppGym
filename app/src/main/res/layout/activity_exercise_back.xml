@@ -99,7 +99,8 @@
             app:layout_constraintTop_toBottomOf="@+id/num_repetition_back"
             android:layout_marginEnd="@dimen/X50X"
             android:layout_marginTop="@dimen/X30X"
-            android:padding="@dimen/X5X"/>
+            android:padding="@dimen/X5X"
+            android:onClick="clickDescriptionBackOne"/>
 
         <ImageButton
             android:id="@+id/button_exit_back"
