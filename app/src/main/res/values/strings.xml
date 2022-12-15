@@ -56,6 +56,17 @@
     <string name="shoulder_press">Press de hombros</string>
 
     <string name="exercise_back">Espalda</string>
+    <string name="aliment">Alimento</string>
+    <string name="chiken">Pollo:       200gr \n 390 cal \n 59 prot \n 15 gra</string>
+    <string name="fish">Pescado:     100gr \n 110 cal \n 23 prot \n 1 gra</string>
+    <string name="cow">Res:       200gr \n 270 cal \n 44 prot \n 5 gra</string>
+    <string name="avocado">Palta:       1u \n 322 cal \n 30 prot \n 4 gra</string>
+    <string name="broccoli">Brocoli:       100gr \n 31 cal \n 2 prot \n 0 gra</string>
+    <string name="rice">Arroz:       100gr \n 129 cal \n 3 prot \n 0 gra</string>
+    <string name="potato">Papa:       100gr \n 80 cal \n 2 prot \n 0 gra</string>
+    <string name="egg">Huevo duro:       1u \n 78 cal \n 6 prot \n 5 gra</string>
+
+
     <string name="dead_weight">Peso muerto</string>
     <string name="barbell_row">Remo con barra</string>
     <string name="dumbbell_row">Remo con mancuerna</string>

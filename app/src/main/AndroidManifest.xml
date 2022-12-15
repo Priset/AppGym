@@ -16,13 +16,11 @@
         <activity
             android:name=".activity.MoldExerciseActivity"
             android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
         <activity
             android:name=".activity.OptionsRecycleActivity"
-            android:exported="false">
+            android:exported="false"
+            android:screenOrientation="portrait">
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -70,8 +68,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
         <activity
             android:name=".activity.RegisterActivity"
             android:exported="false">
@@ -99,8 +95,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-
     </application>
 
 </manifest>

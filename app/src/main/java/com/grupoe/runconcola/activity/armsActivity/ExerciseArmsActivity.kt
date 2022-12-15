@@ -26,8 +26,7 @@ class ExerciseArmsActivity : AppCompatActivity() {
     }
 
     fun exerciseTwo(view: View) {
-        val armsTwo = Intent(this,ArmsTwoFragment::class.java)
-        startActivity(armsTwo)
+        //setDataExercise(Exercise("Brazos",))
     }
 
     /*
@@ -61,14 +60,5 @@ class ExerciseArmsActivity : AppCompatActivity() {
         binding.armsExerciseOne.text = data.type_exercise
         binding.numSetsArms.text = data.number_sets
         binding.numRepetitionArms.text = data.number_repetitions
-        binding.showDescriptionArms.text = data.how_do
     }
-
-    fun setScreenExercise(){
-
-
-    }
-
-
-
 }

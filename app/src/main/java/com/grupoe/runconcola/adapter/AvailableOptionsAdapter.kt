@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.grupoe.runconcola.activity.GymNotesActivity
+import com.grupoe.runconcola.activity.NutritionalTableActivity
 import com.grupoe.runconcola.activity.OptionsRecycleActivity
 import com.grupoe.runconcola.activity.armsActivity.ExerciseArmsActivity
 import com.grupoe.runconcola.activity.backActivity.ExerciseBackActivity
@@ -45,10 +46,10 @@ class AvailableOptionsAdapter: RecyclerView.Adapter<AvailableOptionsAdapter.Avai
                 when (absoluteAdapterPosition) {
                     0 -> intent = Intent(context,ExerciseLegsActivity::class.java)
                     1 -> intent = Intent(context,ExerciseArmsActivity::class.java)
-                    2 -> intent = Intent(context,ExerciseBackActivity::class.java)
-                    3 -> intent = Intent(context,ExerciseChestActivity::class.java)
-                    4 -> intent = Intent(context,GymNotesActivity::class.java)
-                    5 -> intent = Intent(context,ExerciseArmsActivity::class.java)
+                    2 -> intent = Intent(context,ExerciseChestActivity::class.java)
+                    3 -> intent = Intent(context,ExerciseBackActivity::class.java)
+                    4 -> intent = Intent(context,NutritionalTableActivity::class.java)
+                    5 -> intent = Intent(context,GymNotesActivity::class.java)
 
 
                 }
