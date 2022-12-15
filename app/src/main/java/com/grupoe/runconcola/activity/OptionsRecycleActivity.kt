@@ -28,7 +28,8 @@ class OptionsRecycleActivity : AppCompatActivity() {
             Muscle("Brazo", R.drawable.arm_exercises),
             Muscle("Pecho", R.drawable.chest_day),
             Muscle("Espalda", R.drawable.back_day),
-            Muscle("Tabla Nutricional", R.drawable.food_table),
+            Muscle("Tabla Nutricional", R.drawable.nutritional_table),
+            Muscle("Gym Notes",R.drawable.gymnotes)
 
 
         )
@@ -45,6 +46,8 @@ class OptionsRecycleActivity : AppCompatActivity() {
         }
     }
 
-
+    override fun onBackPressed() {
+        finishAffinity()
+    }
 
 }
