@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -45,7 +46,8 @@
         android:textSize="@dimen/S19S"
         android:layout_marginTop="@dimen/X25X"
         android:background="@drawable/button_style3"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:inputType="textPassword" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_to_options"
@@ -59,4 +61,5 @@
         android:gravity="center"
         android:background="@drawable/button_style3"
         android:textColor="@color/white" />
+
 </LinearLayout>

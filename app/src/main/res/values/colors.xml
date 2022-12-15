@@ -14,5 +14,8 @@
     <color name="button_two">#68B5F3</color>
     <color name="button_three">#009688</color>
     <color name="background_one">#2E2D2D</color>
+    <color name="main_grey">#393939</color>
+    <color name="second_grey">#858484</color>
+    <color name="background_two">#3000B0FF</color>
     <color name="trans">#8D252020</color>
 </resources>

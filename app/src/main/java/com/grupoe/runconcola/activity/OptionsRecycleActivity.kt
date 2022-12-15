@@ -22,6 +22,7 @@ class OptionsRecycleActivity : AppCompatActivity() {
         setContentView(binding.root)
         setRecyclerView()
     }
+
     fun setRecyclerView(){
         val mutablelist = mutableListOf<Muscle>(
             Muscle("Pierna", R.drawable.pierna_day),
@@ -30,10 +31,8 @@ class OptionsRecycleActivity : AppCompatActivity() {
             Muscle("Espalda", R.drawable.back_day),
             Muscle("Tabla Nutricional", R.drawable.nutritional_table),
             Muscle("Gym Notes",R.drawable.gymnotes)
+
         )
-
-
-
 
         availableOptionsAdapter.addOptions(mutablelist)
 

@@ -11,9 +11,9 @@
     <string name="age">Edad:</string>
     <string name="new_age">Nueva Edad</string>
     <string name="height">Estatura:</string>
-    <string name="new_height">Nuevo Estatura</string>
+    <string name="new_height">Nuevo Estatura (cm)</string>
     <string name="weight">Peso:</string>
-    <string name="new_weight">Nuevo Peso</string>
+    <string name="new_weight">Nuevo Peso (kg)</string>
     <string name="email">Correo electrónico:</string>
     <string name="new_email">Nuevo Correo</string>
     <string name="password">Contraseña:</string>
@@ -26,9 +26,20 @@
     <string name="email_login">Correo electrónico</string>
     <string name="password_login">Contraseña</string>
     <string name="button_login">Iniciar sesión</string>
+    <string name="note_title">Gym Notes</string>
+    <string name="add_note">Añadir Nueva Nota</string>
 
     <string name="title_nutritional_table">Tabla Nutricional</string>
     <string name="button_calculate">Calcular</string>
+
+    <string name="title_notes">Añade una nueva Nota</string>
+    <string name="date_notes">Fecha:</string>
+    <string name="description_notes">Descripción:</string>
+    <string name="save_note">Guardar:</string>
+
+    <string name="title_item_note">Título</string>
+    <string name="description_item_note">Descripción de Note</string>
+    <string name="date_item_note">Fecha actual</string>
 
     <string name="option_select">Pierna</string>
 
@@ -71,6 +82,8 @@
     <string name="back">Atras</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="prefs_file" translatable="false">com.grupoe.runconcola.activity.PREFERENCE_FILE_KEY</string>
 
 
 </resources>

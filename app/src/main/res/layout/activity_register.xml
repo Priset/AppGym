@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/background_one"
     tools:context=".activity.Login">
 
@@ -90,7 +88,9 @@
                 android:layout_height="@dimen/X50X"
                 android:gravity="center_horizontal"
                 android:hint="@string/new_age"
-                android:maxLength="45"
+                android:maxLength="3"
+                android:ems="3"
+                android:inputType="numberSigned"
                 android:textSize="@dimen/S19S"
                 app:layout_constraintTop_toBottomOf="@+id/text_age"
                 app:layout_constraintStart_toStartOf="parent"
@@ -119,7 +119,9 @@
                 android:layout_height="@dimen/X50X"
                 android:gravity="center_horizontal"
                 android:hint="@string/new_height"
-                android:maxLength="45"
+                android:maxLength="3"
+                android:ems="3"
+                android:inputType="numberSigned"
                 android:textSize="@dimen/S19S"
                 app:layout_constraintTop_toBottomOf="@+id/text_height"
                 app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +150,9 @@
                 android:layout_height="@dimen/X50X"
                 android:gravity="center_horizontal"
                 android:hint="@string/new_weight"
-                android:maxLength="45"
+                android:maxLength="3"
+                android:ems="3"
+                android:inputType="numberSigned"
                 android:textSize="@dimen/S19S"
                 app:layout_constraintTop_toBottomOf="@+id/text_weight"
                 app:layout_constraintStart_toStartOf="parent"
@@ -267,14 +271,14 @@
             </RadioGroup>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button_register"
+                android:id="@+id/button_register2"
                 android:layout_width="@dimen/X110X"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/radio_group"
                 app:layout_constraintRight_toLeftOf="@id/logo_register"
-                android:layout_marginTop="@dimen/X40X"
+                android:layout_marginTop="@dimen/X30X"
                 android:layout_marginEnd="@dimen/X5X"
-                android:layout_marginBottom="@dimen/X10X"
+                android:layout_marginBottom="@dimen/X20X"
                 android:text="@string/button_register"
                 android:textStyle="bold"
                 android:layout_gravity="center"
@@ -290,9 +294,9 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintTop_toBottomOf="@+id/radio_group"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="@dimen/X40X"
+                android:layout_marginTop="@dimen/X30X"
                 android:layout_marginEnd="@dimen/X10X"
-                android:layout_marginBottom="@dimen/X10X" />
+                android:layout_marginBottom="@dimen/X20X" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
