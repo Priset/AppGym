@@ -39,22 +39,7 @@
             android:background="@color/white"
             app:layout_constraintTop_toBottomOf="@id/text_nutritional_table" />
 
-            <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_calculate"
-            android:layout_width="@dimen/X110X"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/X25X"
-            android:layout_marginEnd="@dimen/X5X"
-            android:layout_marginBottom="@dimen/X10X"
-            android:background="@drawable/button_style"
-            android:backgroundTint="@color/button_three"
-            android:text="@string/button_calculate"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
 
             <TextView
             android:id="@+id/text_aliment"
@@ -78,7 +63,8 @@
             android:background="@color/button_two"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_gender">
+            app:layout_constraintTop_toBottomOf="@+id/text_aliment"
+                android:layout_marginBottom="@dimen/X40X">
 
                 <RadioButton
                 android:id="@+id/option_Chiken"
@@ -98,12 +84,12 @@
                 android:textSize="@dimen/S19S" />
 
                 <RadioButton
-                android:id="@+id/option_Cow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/cow"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_Cow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cow"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S" />
 
                 <RadioButton
                 android:id="@+id/option_Avocado"
@@ -143,7 +129,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/egg"
                 android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                android:textSize="@dimen/S19S"
+                    android:layout_marginBottom="@dimen/X40X"/>
 
             </RadioGroup>
 
