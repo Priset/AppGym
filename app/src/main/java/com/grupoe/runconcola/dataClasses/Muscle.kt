@@ -4,7 +4,8 @@ import android.graphics.drawable.Drawable
 
 data class Muscle (
     var type: String,
-    var image: Int
+    var image: Int,
+    //var listExercise: List<Exercise>
 
 )
 

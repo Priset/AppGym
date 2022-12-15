@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.grupoe.runconcola.R
 import com.grupoe.runconcola.adapter.AvailableOptionsAdapter
+import com.grupoe.runconcola.dataClasses.Exercise
 import com.grupoe.runconcola.dataClasses.Muscle
 import com.grupoe.runconcola.databinding.ActivityOptionsRecycleBinding
 
@@ -22,15 +23,21 @@ class OptionsRecycleActivity : AppCompatActivity() {
         setContentView(binding.root)
         setRecyclerView()
     }
+    /*fun listArm(){
+        val mutableList = mutableListOf<Exercise>(
+            Exercise("Brazos","Extenciones de Triceps en polea")
+        )
+    }
+
+     */
     fun setRecyclerView(){
         val mutablelist = mutableListOf<Muscle>(
-            Muscle("Pierna", R.drawable.pierna_day),
+            Muscle("Pierna", R.drawable.pierna_day,),
             Muscle("Brazo", R.drawable.arm_exercises),
             Muscle("Pecho", R.drawable.chest_day),
             Muscle("Espalda", R.drawable.back_day),
             Muscle("Tabla Nutricional", R.drawable.nutritional_table),
             Muscle("Gym Notes",R.drawable.gymnotes)
-
 
         )
 
