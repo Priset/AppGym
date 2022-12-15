@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background_one"
     tools:context=".activity.legsActivity.ExerciseLegsActivity">
 
@@ -13,10 +12,10 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/arms_one"
+            android:id="@+id/legs_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/exercise_arms"
+            android:text="@string/exercise_legs"
             android:textColor="@color/white"
             android:textSize="@dimen/S50S"
             android:textStyle="bold"
@@ -27,29 +26,28 @@
             android:backgroundTint="@color/button_three"/>
 
         <ImageView
-            android:id="@+id/amrs_image_one"
+            android:id="@+id/legs_image_one"
             android:layout_width="@dimen/X500X"
             android:layout_height="@dimen/X400X"
-            android:scaleType="fitStart"
-            android:src="@drawable/arms1"
+            android:src="@drawable/legs1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/arms_one"/>
+            app:layout_constraintTop_toTopOf="@+id/legs_one"/>
 
         <TextView
-            android:id="@+id/arms_excersice_one"
+            android:id="@+id/legs_exercise_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="@dimen/S25S"
-            android:text="@string/triceps_extension"
+            android:text="@string/barbell_squats"
             android:textStyle="bold"
             android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintBottom_toBottomOf="@+id/amrs_image_one"/>
+            app:layout_constraintStart_toStartOf="@+id/legs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/legs_image_one"
+            app:layout_constraintBottom_toBottomOf="@+id/legs_image_one"/>
 
         <TextView
-            android:id="@+id/num_sets"
+            android:id="@+id/num_sets_legs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -57,12 +55,12 @@
             android:text="@string/sets"
             android:textStyle="bold"
             android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/arms_excersice_one"/>
+            app:layout_constraintStart_toStartOf="@+id/legs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/legs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/legs_exercise_one"/>
 
         <TextView
-            android:id="@+id/num_repetition"
+            android:id="@+id/num_repetition_legs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -70,12 +68,12 @@
             android:textStyle="bold"
             android:text="@string/repetitions"
             android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/num_sets"/>
+            app:layout_constraintStart_toStartOf="@+id/legs_image_one"
+            app:layout_constraintEnd_toEndOf="@+id/legs_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/num_sets_legs"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/start_time"
+            android:id="@+id/start_time_legs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/start_time_button"
@@ -84,13 +82,13 @@
             android:backgroundTint="@color/button_one"
             android:background="@drawable/button_style2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition_legs"
             android:layout_marginStart="@dimen/X60X"
             android:layout_marginTop="@dimen/X30X"
             android:padding="@dimen/X6X"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/show_description"
+            android:id="@+id/show_description_legs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/description_button"
@@ -98,14 +96,14 @@
             android:backgroundTint="@color/button_one"
             android:background="@drawable/button_style2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition_legs"
             android:layout_marginEnd="@dimen/X50X"
             android:layout_marginTop="@dimen/X30X"
             android:padding="@dimen/X5X"
-            android:onClick="clickDescriptionArmosOne"/>
+            android:onClick="clickDescriptionLegsOne"/>
 
         <ImageButton
-            android:id="@+id/button_exit"
+            android:id="@+id/button_exit_legs"
             android:layout_width="@dimen/X50X"
             android:layout_height="@dimen/X50X"
             android:scaleType="centerCrop"
@@ -117,7 +115,7 @@
             android:layout_margin="@dimen/X10X"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_next"
+            android:id="@+id/button_next_legs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/next"
@@ -128,16 +126,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="@dimen/X10X"
-            android:layout_marginBottom="@dimen/X10X"
-            android:onClick="exerciseTwo"/>
+            android:layout_marginBottom="@dimen/X10X"/>
 
         <ProgressBar
-            android:id="@+id/time_bar"
+            android:id="@+id/time_bar_legs"
             android:layout_width="@dimen/X350X"
             android:layout_height="@dimen/X20X"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/button_exit"
+            app:layout_constraintBottom_toBottomOf="@id/button_exit_legs"
             android:layout_marginBottom="@dimen/X100X"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 

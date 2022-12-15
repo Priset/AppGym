@@ -37,7 +37,6 @@ class ArmsTwoFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_arms_two, container, false)
     }
-
     companion object {
         /**
          * Use this factory method to create a new instance of

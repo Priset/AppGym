@@ -56,11 +56,32 @@
     <string name="shoulder_press">Press de hombros</string>
 
     <string name="exercise_back">Espalda</string>
+    <string name="dead_weight">Peso muerto</string>
+    <string name="barbell_row">Remo con barra</string>
+    <string name="dumbbell_row">Remo con mancuerna</string>
+    <string name="chest_pull">Jalón al pecho</string>
+    <string name="shrug">Encogimiento de hombros</string>
+    <string name="dumbbell_pullover">Pullover con mancuerna</string>
 
+    <string name="exercise_chest">Pecho</string>
+    <string name="press_bench">Press de Banca</string>
+    <string name="incline_press">Press inclinado</string>
+    <string name="dumbbell_fly">Apertura con mancuernas</string>
+    <string name="funds_parallel">Fondos en paralelas</string>
+    <string name="crossing_pulleys">Cruce con poleas</string>
+    <string name="declined_barbell_press">Press declinado con barra</string>
+
+    <string name="exercise_legs">Piernas</string>
+    <string name="barbell_squats">Sentadillas con barra</string>
+    <string name="press_quadriceps">Prensa para cuádriceps</string>
+    <string name="seated_femoral_curl">Curl de femoral sentado</string>
+    <string name="dumbbell_lunges">Zancadas con mancuernas</string>
+    <string name="calf_raises">Elevaciones de gemelos</string>
+    <string name="aerial_squats">Sentadillas aéreas</string>
 
     <string name="back">Atras</string>
-
-    <string name="hello_blank_fragment">Holi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="prefs_file" translatable="false">com.grupoe.runconcola.activity.PREFERENCE_FILE_KEY</string>
 

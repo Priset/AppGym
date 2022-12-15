@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import com.grupoe.runconcola.activity.OptionsRecycleActivity
+import com.grupoe.runconcola.dataClasses.Exercise
 import com.grupoe.runconcola.databinding.ActivityExerciseArmsBinding
 
 class ExerciseArmsActivity : AppCompatActivity() {
@@ -17,10 +19,10 @@ class ExerciseArmsActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-//        binding.buttonExit.setOnClickListener {
-//            val intent = Intent(this,AvailableOptionsActivity::class.java)
-//            startActivity(intent)
-//        }
+        binding.buttonExitArms.setOnClickListener {
+            val intent = Intent(this,OptionsRecycleActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     fun exerciseTwo(view: View) {
@@ -28,12 +30,15 @@ class ExerciseArmsActivity : AppCompatActivity() {
         startActivity(armsTwo)
     }
 
+    /*
     fun exerciseTwoBack(view: View) {
-        val armsTwo = Intent(this,ExerciseArmsActivity::class.java)
-        startActivity(armsTwo)
+        val armsTwoBack = Intent(this,ExerciseArmsActivity::class.java)
+        startActivity(armsTwoBack)
     }
 
-    private fun descritionArms(){
+     */
+
+    private fun descriptionArmsOne(){
         val builder= AlertDialog.Builder(this)
         builder.setTitle("¿Como hacerlo?")
         builder.setMessage("Para ejecutarlo simplemente colocamos la polea en la posición más elevada  " +
@@ -47,8 +52,23 @@ class ExerciseArmsActivity : AppCompatActivity() {
     }
 
     fun clickDescriptionArmsOne(view: View){
-        val desc1 = descritionArms()
+        val desc1 = descriptionArmsOne()
+    }
+
+    fun setDataExercise(data: Exercise){
+        binding.armsOne.text = data.title_exercise
+        binding.armsImageOne.setImageResource(data.image_exercise)
+        binding.armsExerciseOne.text = data.type_exercise
+        binding.numSetsArms.text = data.number_sets
+        binding.numRepetitionArms.text = data.number_repetitions
+        binding.showDescriptionArms.text = data.how_do
+    }
+
+    fun setScreenExercise(){
+
 
     }
+
+
 
 }
