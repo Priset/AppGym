@@ -29,6 +29,7 @@
             android:id="@+id/back_image_one"
             android:layout_width="@dimen/X500X"
             android:layout_height="@dimen/X400X"
+            android:scaleType="fitStart"
             android:src="@drawable/back1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/back_one"/>
