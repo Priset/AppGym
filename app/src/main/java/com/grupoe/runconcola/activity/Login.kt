@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
+import com.grupoe.runconcola.activity.armsActivity.ExerciseArmsActivity
 import com.grupoe.runconcola.databinding.ActivityLoginBinding
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -19,8 +20,6 @@ class Login : AppCompatActivity() {
         setContentView(view)
 
         setup()
-
-
 
     }
 
@@ -49,7 +48,7 @@ class Login : AppCompatActivity() {
     }
 
     private fun showOptions(){
-        val loginIntent = Intent(this,OptionsRecycleActivity::class.java).apply {
+        val loginIntent = Intent(this,ExerciseArmsActivity::class.java).apply {
         }
         startActivity(loginIntent)
     }

@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#2E2D2D"
+    android:background="@color/background_one"
     tools:context=".activity.armsActivity.ArmsTwoFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/arms_one"
+            android:id="@+id/arms_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/exercise_arms"
@@ -27,16 +31,16 @@
             android:backgroundTint="#009688"/>
 
         <ImageView
-            android:id="@+id/amrs_image_one"
+            android:id="@+id/arms_image_two"
             android:layout_width="500dp"
             android:layout_height="400dp"
             android:scaleType="fitStart"
             android:src="@drawable/arms2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/arms_one"/>
+            app:layout_constraintTop_toTopOf="@+id/arms_two"/>
 
         <TextView
-            android:id="@+id/arms_excersice_one"
+            android:id="@+id/arms_exercise_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -44,12 +48,12 @@
             android:text="@string/biceps_curl"
             android:textStyle="bold"
             android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintBottom_toBottomOf="@+id/amrs_image_one"/>
+            app:layout_constraintStart_toStartOf="@+id/arms_image_two"
+            app:layout_constraintEnd_toEndOf="@+id/arms_image_two"
+            app:layout_constraintBottom_toBottomOf="@+id/arms_image_two"/>
 
         <TextView
-            android:id="@+id/num_sets"
+            android:id="@+id/num_sets_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -57,12 +61,12 @@
             android:text="@string/sets"
             android:textStyle="bold"
             android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/arms_excersice_one"/>
+            app:layout_constraintStart_toStartOf="@+id/arms_image_two"
+            app:layout_constraintEnd_toEndOf="@+id/arms_image_two"
+            app:layout_constraintTop_toBottomOf="@+id/arms_exercise_two"/>
 
         <TextView
-            android:id="@+id/num_repetition"
+            android:id="@+id/num_repetition_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -70,27 +74,27 @@
             android:textStyle="bold"
             android:text="@string/repetitions"
             android:layout_marginEnd="90dp"
-            app:layout_constraintStart_toStartOf="@+id/amrs_image_one"
-            app:layout_constraintEnd_toEndOf="@+id/amrs_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/num_sets"/>
+            app:layout_constraintStart_toStartOf="@+id/arms_image_two"
+            app:layout_constraintEnd_toEndOf="@+id/arms_image_two"
+            app:layout_constraintTop_toBottomOf="@+id/num_sets_two"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/start_time"
+            android:id="@+id/start_time_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/start_time_button"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="italic"
             android:backgroundTint="#4CAF50"
             android:background="@drawable/button_style2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition_two"
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
             android:padding="6dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/show_description"
+            android:id="@+id/show_description_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/description_button"
@@ -98,15 +102,13 @@
             android:backgroundTint="#4CAF50"
             android:background="@drawable/button_style2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition_two"
             android:layout_marginEnd="50dp"
             android:layout_marginTop="30dp"
             android:padding="5dp"/>
 
-
-
         <ImageButton
-            android:id="@+id/button_exit"
+            android:id="@+id/button_exit_two"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:scaleType="centerCrop"
@@ -118,7 +120,7 @@
             android:layout_margin="10dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_next"
+            android:id="@+id/button_next_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/next"
@@ -132,7 +134,7 @@
             android:layout_marginBottom="10dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_back"
+            android:id="@+id/button_back_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/back"
@@ -143,19 +145,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="120dp"
-            android:layout_marginBottom="10dp"
-            android:onClick="exerciseTwoBack"/>
+            android:layout_marginBottom="10dp"/>
 
         <ProgressBar
-            android:id="@+id/time_bar"
+            android:id="@+id/time_bar_two"
             android:layout_width="350dp"
             android:layout_height="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/button_exit"
+            app:layout_constraintBottom_toBottomOf="@id/button_exit_two"
             android:layout_marginBottom="100dp"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.fragment.app.FragmentContainerView>
 
 </FrameLayout>
