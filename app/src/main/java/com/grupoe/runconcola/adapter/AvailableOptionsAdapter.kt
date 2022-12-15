@@ -46,8 +46,8 @@ class AvailableOptionsAdapter: RecyclerView.Adapter<AvailableOptionsAdapter.Avai
                 when (absoluteAdapterPosition) {
                     0 -> intent = Intent(context,ExerciseLegsActivity::class.java)
                     1 -> intent = Intent(context,ExerciseArmsActivity::class.java)
-                    2 -> intent = Intent(context,ExerciseBackActivity::class.java)
-                    3 -> intent = Intent(context,ExerciseChestActivity::class.java)
+                    2 -> intent = Intent(context,ExerciseChestActivity::class.java)
+                    3 -> intent = Intent(context,ExerciseBackActivity::class.java)
                     4 -> intent = Intent(context,NutritionalTableActivity::class.java)
                     5 -> intent = Intent(context,GymNotesActivity::class.java)
 
