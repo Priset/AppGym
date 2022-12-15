@@ -1,18 +1,18 @@
 package com.grupoe.runconcola.activity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.button.MaterialButton
-import com.google.firebase.auth.FirebaseAuth
-import com.grupoe.runconcola.R
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.grupoe.runconcola.adapter.NotesAdapter
+import com.grupoe.runconcola.dataClasses.Notes
 import com.grupoe.runconcola.databinding.ActivityGymNotesBinding
-import kotlinx.android.synthetic.main.activity_gym_notes.*
 
 class GymNotesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityGymNotesBinding
+
+    private val notesAdapter by lazy { NotesAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,26 +25,20 @@ class GymNotesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Nico
-        //setup()
+        setRecyclerView()
     }
 
-    // Nico
-    /*
-    private fun setup(){
-        button_logout.setOnClickListener {
-            //borrado de datos
-            val prefs= getSharedPreferences(getString(R.string.prefs_file),Context.MODE_PRIVATE).edit()
-            prefs.clear()
-            prefs.apply()
-            FirebaseAuth.getInstance().signOut()
-            onBackPressed()
+    fun setRecyclerView(){
+        val mutablelist = mutableListOf<Notes>(
+            Notes("XXYYZZ", "Nueva Nota")
+        )
+
+        notesAdapter.addOptions(mutablelist)
+
+        binding.notesRecycler.apply{
+            layoutManager =
+                LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+            adapter = notesAdapter
         }
     }
-    override fun onBackPressed() {
-        finishAffinity()
-    }
-    */
-
-
 }

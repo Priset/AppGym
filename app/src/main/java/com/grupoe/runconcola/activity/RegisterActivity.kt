@@ -20,20 +20,17 @@ class RegisterActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        /*
-        binding.buttonRegister.setOnClickListener{
+        binding.buttonRegister2.setOnClickListener{
             val intent  = Intent(this, Login::class.java)
             startActivity(intent)
         }
-        
-         */
 
         setup()
-        emptyValues()
     }
 
     private fun setup(){
-        button_register.setOnClickListener {
+        button_register2.setOnClickListener {
+            emptyValues()
             if (edit_text_email.text.toString().isNotEmpty() && edit_text_password.text.isNotEmpty()){
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(edit_text_email.text.toString(),
                     edit_text_password.text.toString()).addOnCompleteListener {
@@ -49,11 +46,9 @@ class RegisterActivity : AppCompatActivity() {
     }
 
 private fun emptyValues(){
-    button_register.setOnClickListener {
-        if (edit_text_number.text.toString().isEmpty() && edit_text_age.text.toString().isEmpty() && edit_text_height.text.toString().isEmpty() &&
-                edit_text_weight.text.toString().isEmpty()) {
-            alert2()
-        }
+    if (edit_text_number.text.toString().isEmpty() && edit_text_age.text.toString().isEmpty() && edit_text_height.text.toString().isEmpty() &&
+        edit_text_weight.text.toString().isEmpty()) {
+        alert2()
     }
 }
 

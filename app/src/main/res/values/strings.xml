@@ -37,6 +37,10 @@
     <string name="description_notes">Descripción:</string>
     <string name="save_note">Guardar:</string>
 
+    <string name="title_item_note">Título</string>
+    <string name="description_item_note">Descripción de Note</string>
+    <string name="date_item_note">Fecha actual</string>
+
     <string name="option_select">Pierna</string>
 
     <string name="exercise_arms">Brazos</string>

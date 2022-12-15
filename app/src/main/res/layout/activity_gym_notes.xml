@@ -51,6 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <!--
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_logout"
         android:layout_width="@dimen/X200X"
@@ -66,5 +67,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/button_add_note"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
