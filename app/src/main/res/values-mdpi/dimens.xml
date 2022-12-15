@@ -33,6 +33,7 @@
     <dimen name="X500X">500dp</dimen>
 
     <!--sp-->
+    <dimen name="S12S">12sp</dimen>
     <dimen name="S19S">19sp</dimen>
     <dimen name="S20S">20sp</dimen>
     <dimen name="S22S">22sp</dimen>

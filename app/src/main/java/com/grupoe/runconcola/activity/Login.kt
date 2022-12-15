@@ -19,9 +19,6 @@ class Login : AppCompatActivity() {
         setContentView(view)
 
         setup()
-
-
-
     }
 
         private fun setup(){
@@ -53,9 +50,5 @@ class Login : AppCompatActivity() {
         }
         startActivity(loginIntent)
     }
-
-
-
-
 }
 
