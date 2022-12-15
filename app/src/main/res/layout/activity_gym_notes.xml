@@ -30,13 +30,86 @@
         android:layout_marginEnd="@dimen/X110X"
         app:layout_constraintTop_toBottomOf="@id/notes_title"/>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/X10X"
+        android:layout_marginTop="@dimen/X20X"
+        android:layout_marginBottom="@dimen/X10X"
+        android:layout_marginEnd="@dimen/X10X"
+        android:layout_marginStart="@dimen/X10X"
+        android:background="@drawable/button_style4"
+        app:layout_constraintTop_toTopOf="@id/view_line_title_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_notes"
+            android:background="@color/background_two"
+            android:padding="@dimen/X10X"
+            android:layout_margin="@dimen/X10X"
+            android:lines="2"
+            app:layout_constraintTop_toTopOf="@id/constraint_notes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_notes"
+            android:background="@color/background_two"
+            android:padding="@dimen/X10X"
+            android:layout_margin="@dimen/X10X"
+            android:lines="7"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@+id/text_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!--
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_save_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_note"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/main_button"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="@dimen/X20X"
+            app:layout_constraintTop_toBottomOf="@+id/text_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+            -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_line_separate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/X3X"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/X12X"
+        app:layout_constraintTop_toBottomOf="@id/constraint_notes"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notes_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@id/view_line_title_notes"
+        app:layout_constraintBottom_toBottomOf="@id/constraint_notes"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/X420X"
+        android:layout_marginBottom="@dimen/X70X"
+        tools:listitem="@layout/item_note"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_add_note"
@@ -44,29 +117,12 @@
         android:layout_height="wrap_content"
         android:text="@string/add_note"
         android:textColor="@color/white"
-        android:backgroundTint="@color/button_three"
+        android:textStyle="bold"
+        android:backgroundTint="@color/main_button"
         android:layout_marginBottom="@dimen/X12X"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
-
-    <!--
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_logout"
-        android:layout_width="@dimen/X200X"
-        android:layout_height="@dimen/X80X"
-        android:layout_marginBottom="@dimen/X70X"
-        android:text="@string/button_login"
-        android:textStyle="bold"
-        android:textSize="@dimen/S19S"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:background="@drawable/button_style3"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/button_add_note"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
