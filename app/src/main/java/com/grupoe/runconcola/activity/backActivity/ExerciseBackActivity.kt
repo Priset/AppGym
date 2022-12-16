@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import com.grupoe.runconcola.R
 import com.grupoe.runconcola.activity.OptionsRecycleActivity
+import com.grupoe.runconcola.dataClasses.Exercise
 import com.grupoe.runconcola.databinding.ActivityExerciseBackBinding
 
 class ExerciseBackActivity : AppCompatActivity() {
@@ -22,6 +24,26 @@ class ExerciseBackActivity : AppCompatActivity() {
             val intent = Intent(this, OptionsRecycleActivity::class.java)
             startActivity(intent)
         }
+
+        var contador = 0
+        binding.buttonNextBack.setOnClickListener {
+            val lista = listBack()
+            setDataExercise(lista[contador])
+            contador++
+            if (contador == lista.size)
+                contador = 0
+        }
+    }
+
+    fun listBack():List<Exercise>{
+        val mutableList = mutableListOf<Exercise>(
+            Exercise("Espalda", R.drawable.back2, "Remo con barra", "3 series", "6-8 repeticiones"),
+            Exercise("Espalda", R.drawable.back3, "Remo con mancuerna", "3 series", "10-12 repeticiones"),
+            Exercise("Espalda", R.drawable.back4, "Jalon al pecho", "3 series", "15 repeticiones"),
+            Exercise("Espalda", R.drawable.back5, "Encogimientos", "3 series", "15 repeticiones"),
+            Exercise("Espalda", R.drawable.back6, "Pull Over con mancuerna", "2 series", "12 repeticiones")
+        )
+        return mutableList
     }
 
     private fun descriptionBackOne(){
@@ -40,5 +62,13 @@ class ExerciseBackActivity : AppCompatActivity() {
 
     fun clickDescriptionBackOne(view: View){
         val desc1 = descriptionBackOne()
+    }
+
+    fun setDataExercise(data: Exercise){
+        binding.backOne.text = data.title_exercise
+        binding.backImageOne.setImageResource(data.image_exercise)
+        binding.backExerciseOne.text = data.type_exercise
+        binding.numSetsBack.text = data.number_sets
+        binding.numRepetitionBack.text = data.number_repetitions
     }
 }

@@ -74,21 +74,6 @@
             app:layout_constraintTop_toBottomOf="@+id/num_sets_back"/>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/start_time_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/start_time_button"
-            android:textSize="@dimen/S20S"
-            android:textStyle="italic"
-            android:backgroundTint="@color/button_one"
-            android:background="@drawable/button_style2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition_back"
-            android:layout_marginStart="@dimen/X60X"
-            android:layout_marginTop="@dimen/X30X"
-            android:padding="@dimen/X6X"/>
-
-        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/show_description_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,12 +81,12 @@
             android:textStyle="italic"
             android:backgroundTint="@color/button_one"
             android:background="@drawable/button_style2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition_back"
-            android:layout_marginEnd="@dimen/X50X"
-            android:layout_marginTop="@dimen/X30X"
+            android:layout_marginTop="@dimen/X50X"
             android:padding="@dimen/X5X"
-            android:onClick="clickDescriptionBackOne"/>
+            android:onClick="clickDescriptionBackOne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition_back"/>
 
         <ImageButton
             android:id="@+id/button_exit_back"
@@ -129,15 +114,6 @@
             android:layout_marginEnd="@dimen/X10X"
             android:layout_marginBottom="@dimen/X10X"/>
 
-        <ProgressBar
-            android:id="@+id/time_bar_back"
-            android:layout_width="@dimen/X350X"
-            android:layout_height="@dimen/X20X"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/button_exit_back"
-            android:layout_marginBottom="@dimen/X100X"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

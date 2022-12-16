@@ -1,6 +1,4 @@
 package com.grupoe.runconcola.activity
-
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,10 +25,10 @@ class OptionsRecycleActivity : AppCompatActivity() {
     fun listArm():List<Exercise>{
         val mutableList = mutableListOf<Exercise>(
             Exercise("Brazos", R.drawable.arms1, "Extensiones de Triceps", "3 series","12 repeticiones"),
-            Exercise("Brazo", R.drawable.arms2, "Curl de Bicep con Barra", "3 series", "12 repeticiones"),
-            Exercise("Brazo", R.drawable.arms3, "Fondos Triceps", "3 series", "8-12 repeticiones"),
-            Exercise("Brazo", R.drawable.arms4, "Curl de Bicep con mancuerna", "3 series", "12 repeticiones"),
-            Exercise("Brazo", R.drawable.arms5, "Press de hombro", "3 series", "12 repeticiones")
+            Exercise("Brazos", R.drawable.arms2, "Curl de Bicep con Barra", "3 series", "12 repeticiones"),
+            Exercise("Brazos", R.drawable.arms3, "Fondos Triceps", "3 series", "8-12 repeticiones"),
+            Exercise("Brazos", R.drawable.arms4, "Curl de Bicep con mancuerna", "3 series", "12 repeticiones"),
+            Exercise("Brazos", R.drawable.arms5, "Press de hombro", "3 series", "12 repeticiones")
         )
         return mutableList
     }
@@ -67,21 +65,16 @@ class OptionsRecycleActivity : AppCompatActivity() {
         )
         return mutableList
     }
-    /*fun listTableNut():List<>{
-        val mutableList = mutableListOf<>(
 
-        )
-    }
-    */
 
     fun setRecyclerView(){
         val mutablelist = mutableListOf<Muscle>(
-            Muscle("Pierna", R.drawable.pierna_day, listLeg()),
-            Muscle("Brazo", R.drawable.arm_exercises, listArm()),
-            Muscle("Pecho", R.drawable.chest_day, listChest()),
-            Muscle("Espalda", R.drawable.back_day, listBack()),
-          //  Muscle("Tabla Nutricional", R.drawable.nutritional_table),
-           // Muscle("Gym Notes",R.drawable.gymnotes) //share references
+            Muscle("Pierna", R.drawable.pierna_day),
+            Muscle("Brazo", R.drawable.arm_exercises),
+            Muscle("Pecho", R.drawable.chest_day),
+            Muscle("Espalda", R.drawable.back_day),
+            Muscle("Tabla Nutricional", R.drawable.nutritional_table),
+            Muscle("Gym Notes",R.drawable.gymnotes) //share references
 
         )
 

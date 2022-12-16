@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/background_one"
     tools:context=".activity.NutritionalTableActivity">
 
@@ -17,120 +17,143 @@
             android:layout_height="wrap_content">
 
             <TextView
-            android:id="@+id/text_nutritional_table"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/X30X"
-            android:gravity="center_horizontal"
-            android:text="@string/title_nutritional_table"
-            android:textColor="@color/white"
-            android:textSize="@dimen/S22S"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/text_nutritional_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/X30X"
+                android:gravity="center_horizontal"
+                android:text="@string/title_nutritional_table"
+                android:textColor="@color/white"
+                android:textSize="@dimen/S22S"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <View
-            android:id="@+id/view_line_title2"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/X3X"
-            android:layout_marginStart="@dimen/X95X"
-            android:layout_marginTop="@dimen/X3X"
-            android:layout_marginEnd="@dimen/X95X"
-            android:background="@color/white"
-            app:layout_constraintTop_toBottomOf="@id/text_nutritional_table" />
-
+                android:id="@+id/view_line_title2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/X3X"
+                android:layout_marginStart="@dimen/X95X"
+                android:layout_marginTop="@dimen/X3X"
+                android:layout_marginEnd="@dimen/X95X"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/text_nutritional_table" />
 
 
             <TextView
-            android:id="@+id/text_aliment"
-            android:layout_width="@dimen/X300X"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/X35X"
-            android:background="@color/button_one"
-            android:gravity="center_horizontal"
-            android:text="@string/aliment"
-            android:textColor="@color/black"
-            android:textSize="@dimen/S22S"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/text_nutritional_table" />
+                android:id="@+id/text_aliment"
+                android:layout_width="@dimen/X300X"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/X35X"
+                android:background="@color/button_one"
+                android:gravity="center_horizontal"
+                android:text="@string/aliment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/S22S"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/text_nutritional_table" />
 
             <RadioGroup
-            android:id="@+id/radio_group"
-            android:layout_width="@dimen/X300X"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/X1X"
-            android:background="@color/button_two"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_aliment"
-                android:layout_marginBottom="@dimen/X40X">
+                android:id="@+id/radio_group"
+                android:layout_width="@dimen/X300X"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/X1X"
+                android:layout_marginBottom="@dimen/X40X"
+                android:background="@color/button_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_aliment">
 
                 <RadioButton
-                android:id="@+id/option_Chiken"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/chiken"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_Chiken"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
+                    android:checked="true"
+                    android:text="@string/chiken"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="deficit"/>
 
                 <RadioButton
-                android:id="@+id/option_fish"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/fish"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_fish"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
+                    android:text="@string/fish"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="deficit"/>
 
                 <RadioButton
                     android:id="@+id/option_Cow"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/X300X"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
                     android:text="@string/cow"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/S19S" />
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="superavit"/>
 
                 <RadioButton
-                android:id="@+id/option_Avocado"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/avocado"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_Avena"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
+                    android:text="@string/avena"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="superavit"/>
 
                 <RadioButton
-                android:id="@+id/option_broccoli"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/broccoli"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_salmon"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
+                    android:text="@string/salmon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="deficit"/>
 
                 <RadioButton
-                android:id="@+id/option_rice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/rice"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_shrimp"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
+                    android:text="@string/shrimp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="deficit"/>
 
                 <RadioButton
-                android:id="@+id/option_potato"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/potato"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S" />
+                    android:id="@+id/option_pork"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_style"
+                    android:text="@string/pork"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="deficit"/>
 
                 <RadioButton
-                android:id="@+id/option_egg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/egg"
-                android:textColor="@color/black"
-                android:textSize="@dimen/S19S"
-                    android:layout_marginBottom="@dimen/X40X"/>
+                    android:id="@+id/option_pasta"
+                    android:layout_width="@dimen/X300X"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/X40X"
+                    android:background="@drawable/table_style"
+                    android:text="@string/pasta"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/S19S"
+                    android:textStyle="bold"
+                    android:onClick="superavit"/>
 
             </RadioGroup>
 

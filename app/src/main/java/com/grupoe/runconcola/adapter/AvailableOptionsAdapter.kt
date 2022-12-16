@@ -4,11 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.grupoe.runconcola.activity.GymNotesActivity
 import com.grupoe.runconcola.activity.NutritionalTableActivity
-import com.grupoe.runconcola.activity.OptionsRecycleActivity
 import com.grupoe.runconcola.activity.armsActivity.ExerciseArmsActivity
 import com.grupoe.runconcola.activity.backActivity.ExerciseBackActivity
 import com.grupoe.runconcola.activity.chestActivity.ExerciseChestActivity

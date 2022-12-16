@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import com.grupoe.runconcola.R
 import com.grupoe.runconcola.activity.OptionsRecycleActivity
+import com.grupoe.runconcola.dataClasses.Exercise
 import com.grupoe.runconcola.databinding.ActivityExerciseChestBinding
 
 
@@ -23,6 +25,26 @@ class ExerciseChestActivity : AppCompatActivity() {
             val intent = Intent(this, OptionsRecycleActivity::class.java)
             startActivity(intent)
         }
+
+        var contador = 0
+        binding.buttonNextChest.setOnClickListener {
+            val lista = listChest()
+            setDataExercise(lista[contador])
+            contador++
+            if (contador == lista.size)
+                contador = 0
+        }
+    }
+
+    fun listChest():List<Exercise>{
+        val mutableList = mutableListOf<Exercise>(
+            Exercise("Pecho", R.drawable.chest2, "Press inclinado", "3 series", "9-12 repeticiones"),
+            Exercise("Pecho", R.drawable.chest3, "Apertura con mancuernas", "3 series", "10-12 repeticiones"),
+            Exercise("Pecho", R.drawable.chest4, "Fondos en paralelas", "3 series", "12-14 repeticiones"),
+            Exercise("Pecho", R.drawable.chest5, "Cruce con poleas", "3 series", "12-14 repeticiones"),
+            Exercise("Pecho", R.drawable.chest6, "Press declinado", "3 series", "9-12 repeticiones")
+        )
+        return mutableList
     }
 
     private fun descriptionChestOne(){
@@ -43,4 +65,13 @@ class ExerciseChestActivity : AppCompatActivity() {
     fun clickDescriptionChestOne(view: View){
         val desc1 = descriptionChestOne()
     }
+
+    fun setDataExercise(data: Exercise){
+        binding.chestOne.text = data.title_exercise
+        binding.chestImageOne.setImageResource(data.image_exercise)
+        binding.chestExerciseOne.text = data.type_exercise
+        binding.numSetsChest.text = data.number_sets
+        binding.numRepetitionChest.text = data.number_repetitions
+    }
+
 }
