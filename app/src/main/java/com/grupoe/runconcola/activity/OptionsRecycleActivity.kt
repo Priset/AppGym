@@ -17,6 +17,7 @@ class OptionsRecycleActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityOptionsRecycleBinding
 
+
     private val availableOptionsAdapter by lazy { AvailableOptionsAdapter() }
 
 

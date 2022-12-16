@@ -29,7 +29,9 @@
     <dimen name="X280X">280dp</dimen>
     <dimen name="X300X">300dp</dimen>
     <dimen name="X350X">300dp</dimen>
+    <dimen name="X390X">390dp</dimen>
     <dimen name="X400X">400dp</dimen>
+    <dimen name="X420X">420dp</dimen>
     <dimen name="X500X">500dp</dimen>
 
     <!--sp-->

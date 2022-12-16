@@ -35,7 +35,7 @@
     <string name="title_notes">Añade una nueva Nota</string>
     <string name="date_notes">Fecha:</string>
     <string name="description_notes">Descripción:</string>
-    <string name="save_note">Guardar:</string>
+    <string name="save_note">Guardar Nueva Nota:</string>
 
     <string name="title_item_note">Título</string>
     <string name="description_item_note">Descripción de Note</string>
