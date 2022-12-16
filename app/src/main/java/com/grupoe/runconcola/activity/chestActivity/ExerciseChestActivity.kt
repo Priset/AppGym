@@ -38,7 +38,6 @@ class ExerciseChestActivity : AppCompatActivity() {
 
     fun listChest():List<Exercise>{
         val mutableList = mutableListOf<Exercise>(
-            Exercise("Pecho", R.drawable.chest1, "Press de banca", "3 series", "12 repeticiones"),
             Exercise("Pecho", R.drawable.chest2, "Press inclinado", "3 series", "9-12 repeticiones"),
             Exercise("Pecho", R.drawable.chest3, "Apertura con mancuernas", "3 series", "10-12 repeticiones"),
             Exercise("Pecho", R.drawable.chest4, "Fondos en paralelas", "3 series", "12-14 repeticiones"),

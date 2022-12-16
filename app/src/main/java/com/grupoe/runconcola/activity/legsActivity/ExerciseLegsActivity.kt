@@ -37,7 +37,6 @@ class ExerciseLegsActivity : AppCompatActivity() {
 
     fun listLegs() :List<Exercise>{
         val mutableList = mutableListOf<Exercise>(
-            Exercise("Piernas", R.drawable.legs1, "Back Squad", "4 series", "6-8 repeticiones"),
             Exercise("Piernas", R.drawable.legs2, "Prensa cuadriceps", "5 series", "10 repeticiones"),
             Exercise("Piernas", R.drawable.legs3, "Curl de femoral", "3 series", "10-12 repeticiones"),
             Exercise("Piernas", R.drawable.legs4, "Zancadas con mancuerna", "4 series", "20 repeticiones"),

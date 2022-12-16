@@ -37,12 +37,11 @@ class ExerciseBackActivity : AppCompatActivity() {
 
     fun listBack():List<Exercise>{
         val mutableList = mutableListOf<Exercise>(
-            Exercise("Espalda", R.drawable.back1, "Peso muerto", "3 sets", "6-8 repeticiones"),
-            Exercise("Espalda", R.drawable.back2, "Remo con barra", "3 sets", "6-8 repeticiones"),
-            Exercise("Espalda", R.drawable.back3, "Remo con mancuerna", "3 sets", "10-12 repeticiones"),
-            Exercise("Espalda", R.drawable.back4, "Jalon al pecho", "3 sets", "15 repeticiones"),
-            Exercise("Espalda", R.drawable.back5, "Encogimientos", "3 sets", "15 repeticiones"),
-            Exercise("Espalda", R.drawable.back6, "Pull Over con mancuerna", "2 sets", "12 repeticiones")
+            Exercise("Espalda", R.drawable.back2, "Remo con barra", "3 series", "6-8 repeticiones"),
+            Exercise("Espalda", R.drawable.back3, "Remo con mancuerna", "3 series", "10-12 repeticiones"),
+            Exercise("Espalda", R.drawable.back4, "Jalon al pecho", "3 series", "15 repeticiones"),
+            Exercise("Espalda", R.drawable.back5, "Encogimientos", "3 series", "15 repeticiones"),
+            Exercise("Espalda", R.drawable.back6, "Pull Over con mancuerna", "2 series", "12 repeticiones")
         )
         return mutableList
     }
