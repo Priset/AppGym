@@ -55,7 +55,7 @@
             android:lines="2"
             app:layout_constraintTop_toTopOf="@id/constraint_notes"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <EditText
             android:id="@+id/text_description"
@@ -69,26 +69,7 @@
             android:gravity="top"
             app:layout_constraintTop_toBottomOf="@+id/text_date"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <!--
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_save_note"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/save_note"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:backgroundTint="@color/main_button"
-            android:background="@drawable/button_style"
-            android:layout_marginTop="@dimen/X20X"
-            app:layout_constraintTop_toBottomOf="@+id/text_description"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-            -->
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -123,6 +104,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        android:onClick="grabar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
