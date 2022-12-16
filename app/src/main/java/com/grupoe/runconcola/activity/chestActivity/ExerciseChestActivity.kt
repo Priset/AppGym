@@ -50,13 +50,13 @@ class ExerciseChestActivity : AppCompatActivity() {
     private fun descriptionChestOne(){
         val builder= AlertDialog.Builder(this)
         builder.setTitle("¿Como hacerlo?")
-        builder.setMessage("Túmbate en un banco plano. En el bench press, los hombros " +
-                "se echan hacia atrás y al mismo tiempo se crea una pequeña lordosis. " +
-                "La línea que se prolonga entre los hombros y el comienzo de las vértebras " +
-                "lumbares debe estar apoyada en el banco. Por debajo del extensor dorsal " +
-                "inferior se debe poder extender un brazo. La cabeza queda apoyada sobre el " +
-                "banco y los ojos se fijan en la barra, mientras que las piernas se colocan " +
-                "firmes en el suelo formando un ángulo de 90°.")
+        builder.setMessage("Probad a utilizar el mayor peso posible con una buena ejecución " +
+                "y concentraos siempre en activar todas las fibras musculares. Apretad en cada " +
+                "contracción como si el pecho fuera una esponja y le quisierais extraer el agua. " +
+                "El pecho necesita movimientos potentes y controlados. El control de la fase " +
+                "excéntrica (negativa) resulta esencial para atacar al mayor número de fibras, " +
+                "lo mismo que los movimientos explosivos (concéntricos) de subida, intentando " +
+                "usar el máximo peso posible.")
         builder.setPositiveButton("Entendido!",null)
         val dialog: AlertDialog =builder.create()
         dialog.show()

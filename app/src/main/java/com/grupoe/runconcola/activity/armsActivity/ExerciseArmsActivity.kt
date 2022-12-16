@@ -52,11 +52,11 @@ class ExerciseArmsActivity : AppCompatActivity() {
     private fun descriptionArmsOne(){
         val builder= AlertDialog.Builder(this)
         builder.setTitle("¿Como hacerlo?")
-        builder.setMessage("Para ejecutarlo simplemente colocamos la polea en la posición más elevada  " +
-                "con el accesorio de la cuerda y, con las piernas ligeramente flexionadas y la espalda recta, " +
-                "sujetamos ambos extremos con cada mano. Comenzamos con los brazos en un ángulo de 90º y los " +
-                "estiramos por completo quedando estos al lado del cuerpo. Luego volvemos a la posición anterior " +
-                "para terminar una repetición.")
+        builder.setMessage("En este entrenamiento además vamos a hacer dos superseries " +
+                "en las que vamos a combinar el trabajo de bíceps y tríceps e intentar " +
+                "descansar lo menos posible para conseguir esa sensación de sobrecarga que " +
+                "buscamos. Por tanto, los primeros cuatro ejercicios del entrenamiento a " +
+                "continuación los hacemos en grupos de dos y sin descanso entre ellos.")
         builder.setPositiveButton("Entendido!",null)
         val dialog: AlertDialog =builder.create()
         dialog.show()

@@ -49,12 +49,10 @@ class ExerciseBackActivity : AppCompatActivity() {
     private fun descriptionBackOne(){
         val builder= AlertDialog.Builder(this)
         builder.setTitle("¿Como hacerlo?")
-        builder.setMessage("Hay que tener en cuenta un factor determinante antes " +
-                "de hacer el ejercicio. Realizar el movimiento de forma correcta, " +
-                "requiere de práctica y dedicación. No es un movimiento sencillo. " +
-                "Te recomendamos, en unas primeras sesiones, hacerlo lentamente y " +
-                "no excederte demasiado en las repeticiones. Una mala ejecución puede " +
-                "derivar en alguna lesión o contractura en la espalda.")
+        builder.setMessage("El desarrollo de una espalda ancha y voluminosa " +
+                "puede mejorar enormemente tu aspecto físico. Para conseguirla, " +
+                "tendrás que atacar la espalda con una serie de ejercicios para " +
+                "espalda enfocados a ciertos músculos.")
         builder.setPositiveButton("Entendido!",null)
         val dialog: AlertDialog =builder.create()
         dialog.show()

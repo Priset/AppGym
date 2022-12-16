@@ -49,11 +49,14 @@ class ExerciseLegsActivity : AppCompatActivity() {
     private fun descriptionLegsOne(){
         val builder= AlertDialog.Builder(this)
         builder.setTitle("¿Como hacerlo?")
-        builder.setMessage("Para realizar correctamente una sentadilla con barra, " +
-                "no solo debemos prestar atención a la posición, sino también al " +
-                "movimiento. Aunque mucha gente piensa que se trata de un movimiento " +
-                "vertical al levantar el cuerpo, esto no es del todo así. La barra " +
-                "también debe moverse con cierto ángulo mientras se realiza la sentadilla.")
+        builder.setMessage("Realiza series de aproximación para los ejercicios " +
+                "con los que vayas a comenzar tu rutina si son grupos musculares " +
+                "diferentes. Usamos los ejercicios multiarticulares para cargar más " +
+                "peso y dado que la mayor parte son con peso libre, vas a necesitar " +
+                "ser un master en la técnica antes de comenzar a subirle discos " +
+                "a la barra. Es fundamental sentir como se activan tus músculos durante " +
+                "el recorrido del movimiento. Te va a mantener alejado de lesiones y " +
+                "va a aumentar el desarrollo muscular notablemente.")
         builder.setPositiveButton("Entendido!",null)
         val dialog: AlertDialog =builder.create()
         dialog.show()
