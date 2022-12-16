@@ -9,21 +9,23 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <TextView
             android:id="@+id/arms_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/X10X"
+            android:background="@drawable/button_style"
+            android:backgroundTint="@color/button_three"
             android:text="@string/exercise_arms"
             android:textColor="@color/white"
             android:textSize="@dimen/S50S"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_margin="@dimen/X10X"
-            android:background="@drawable/button_style"
-            android:backgroundTint="@color/button_three"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/arms_image_one"
@@ -32,112 +34,88 @@
             android:scaleType="fitStart"
             android:src="@drawable/arms1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/arms_one"/>
+            app:layout_constraintTop_toTopOf="@+id/arms_one" />
 
         <TextView
             android:id="@+id/arms_exercise_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/X90X"
+            android:text="@string/triceps_extension"
             android:textColor="@color/white"
             android:textSize="@dimen/S25S"
-            android:text="@string/triceps_extension"
             android:textStyle="bold"
-            android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/arms_image_one"
+            app:layout_constraintBottom_toBottomOf="@+id/arms_image_one"
             app:layout_constraintEnd_toEndOf="@+id/arms_image_one"
-            app:layout_constraintBottom_toBottomOf="@+id/arms_image_one"/>
+            app:layout_constraintStart_toStartOf="@+id/arms_image_one" />
 
         <TextView
             android:id="@+id/num_sets_arms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/X90X"
+            android:text="@string/sets"
             android:textColor="@color/white"
             android:textSize="@dimen/S30S"
-            android:text="@string/sets"
             android:textStyle="bold"
-            android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/arms_image_one"
             app:layout_constraintEnd_toEndOf="@+id/arms_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/arms_exercise_one"/>
+            app:layout_constraintStart_toStartOf="@+id/arms_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/arms_exercise_one" />
 
         <TextView
             android:id="@+id/num_repetition_arms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/X90X"
+            android:text="@string/repetitions"
             android:textColor="@color/white"
             android:textSize="@dimen/S30S"
             android:textStyle="bold"
-            android:text="@string/repetitions"
-            android:layout_marginEnd="@dimen/X90X"
-            app:layout_constraintStart_toStartOf="@+id/arms_image_one"
             app:layout_constraintEnd_toEndOf="@+id/arms_image_one"
-            app:layout_constraintTop_toBottomOf="@+id/num_sets_arms"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/start_time_arms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/start_time_button"
-            android:textSize="@dimen/S20S"
-            android:textStyle="italic"
-            android:backgroundTint="@color/button_one"
-            android:background="@drawable/button_style2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition_arms"
-            android:layout_marginStart="@dimen/X60X"
-            android:layout_marginTop="@dimen/X30X"
-            android:padding="@dimen/X6X"/>
+            app:layout_constraintStart_toStartOf="@+id/arms_image_one"
+            app:layout_constraintTop_toBottomOf="@+id/num_sets_arms" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/show_description_arms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/X50X"
+            android:background="@drawable/button_style2"
+            android:backgroundTint="@color/button_one"
+            android:onClick="clickDescriptionArmsOne"
+            android:padding="@dimen/X5X"
             android:text="@string/description_button"
             android:textStyle="italic"
-            android:backgroundTint="@color/button_one"
-            android:background="@drawable/button_style2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_repetition_arms"
-            android:layout_marginEnd="@dimen/X50X"
-            android:layout_marginTop="@dimen/X30X"
-            android:padding="@dimen/X5X"
-            android:onClick="clickDescriptionArmsOne"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num_repetition_arms"/>
 
         <ImageButton
             android:id="@+id/button_exit_arms"
             android:layout_width="@dimen/X50X"
             android:layout_height="@dimen/X50X"
+            android:layout_margin="@dimen/X10X"
+            android:layout_marginBottom="@dimen/X12X"
+            android:background="@drawable/button_style"
             android:scaleType="centerCrop"
             android:src="@drawable/exit2"
-            android:background="@drawable/button_style"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="@dimen/X12X"
-            android:layout_margin="@dimen/X10X"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_next_arms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/button_three"
-            android:background="@drawable/button_style2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginEnd="@dimen/X10X"
-            android:layout_marginBottom="@dimen/X10X"/>
+            android:layout_marginBottom="@dimen/X10X"
+            android:background="@drawable/button_style2"
+            android:backgroundTint="@color/button_three"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
-        <ProgressBar
-            android:id="@+id/time_bar_arms"
-            android:layout_width="@dimen/X350X"
-            android:layout_height="@dimen/X20X"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/button_exit_arms"
-            android:layout_marginBottom="@dimen/X100X"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

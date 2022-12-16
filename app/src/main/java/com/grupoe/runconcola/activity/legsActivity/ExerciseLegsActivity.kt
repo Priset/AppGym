@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import com.grupoe.runconcola.R
 import com.grupoe.runconcola.activity.OptionsRecycleActivity
+import com.grupoe.runconcola.dataClasses.Exercise
 import com.grupoe.runconcola.databinding.ActivityExerciseLegsBinding
 
 class ExerciseLegsActivity : AppCompatActivity() {
@@ -22,6 +24,27 @@ class ExerciseLegsActivity : AppCompatActivity() {
             val intent = Intent(this, OptionsRecycleActivity::class.java)
             startActivity(intent)
         }
+
+        var contador = 0
+        binding.buttonNextLegs.setOnClickListener {
+            val lista = listLegs()
+            setDataExercise(lista[contador])
+            contador++
+            if (contador == lista.size)
+                contador = 0
+        }
+    }
+
+    fun listLegs() :List<Exercise>{
+        val mutableList = mutableListOf<Exercise>(
+            Exercise("Piernas", R.drawable.legs1, "Back Squad", "4 series", "6-8 repeticiones"),
+            Exercise("Piernas", R.drawable.legs2, "Prensa cuadriceps", "5 series", "10 repeticiones"),
+            Exercise("Piernas", R.drawable.legs3, "Curl de femoral", "3 series", "10-12 repeticiones"),
+            Exercise("Piernas", R.drawable.legs4, "Zancadas con mancuerna", "4 series", "20 repeticiones"),
+            Exercise("Piernas", R.drawable.legs5, "Elevaciones de gemelos", "4 series", "15 repeticiones"),
+            Exercise("Piernas", R.drawable.legs6, "Front Squad", "4 series", "6-8 repeticiones")
+        )
+        return mutableList
     }
 
     private fun descriptionLegsOne(){
@@ -39,5 +62,13 @@ class ExerciseLegsActivity : AppCompatActivity() {
 
     fun clickDescriptionLegsOne(view: View){
         val desc1 = descriptionLegsOne()
+    }
+
+    fun setDataExercise(data: Exercise){
+        binding.legsOne.text = data.title_exercise
+        binding.legsImageOne.setImageResource(data.image_exercise)
+        binding.legsExerciseOne.text = data.type_exercise
+        binding.numSetsLegs.text = data.number_sets
+        binding.numRepetitionLegs.text = data.number_repetitions
     }
 }

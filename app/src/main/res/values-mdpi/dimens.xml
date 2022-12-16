@@ -23,6 +23,7 @@
     <dimen name="X95X">95dp</dimen>
     <dimen name="X100X">100dp</dimen>
     <dimen name="X110X">110dp</dimen>
+    <dimen name="X120X">120dp</dimen>
     <dimen name="X170X">170dp</dimen>
     <dimen name="X180X">180dp</dimen>
     <dimen name="X200X">200dp</dimen>
