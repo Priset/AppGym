@@ -1,6 +1,4 @@
 package com.grupoe.runconcola.activity
-
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,6 +11,7 @@ import com.grupoe.runconcola.databinding.ActivityOptionsRecycleBinding
 class OptionsRecycleActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityOptionsRecycleBinding
+
 
     private val availableOptionsAdapter by lazy { AvailableOptionsAdapter() }
 
@@ -66,21 +65,16 @@ class OptionsRecycleActivity : AppCompatActivity() {
         )
         return mutableList
     }
-    /*fun listTableNut():List<>{
-        val mutableList = mutableListOf<>(
 
-        )
-    }
-    */
 
     fun setRecyclerView(){
         val mutablelist = mutableListOf<Muscle>(
-            Muscle("Pierna", R.drawable.pierna_day, listLeg()),
-            Muscle("Brazo", R.drawable.arm_exercises, listArm()),
-            Muscle("Pecho", R.drawable.chest_day, listChest()),
-            Muscle("Espalda", R.drawable.back_day, listBack()),
-          //  Muscle("Tabla Nutricional", R.drawable.nutritional_table),
-           // Muscle("Gym Notes",R.drawable.gymnotes) //share references
+            Muscle("Pierna", R.drawable.pierna_day),
+            Muscle("Brazo", R.drawable.arm_exercises),
+            Muscle("Pecho", R.drawable.chest_day),
+            Muscle("Espalda", R.drawable.back_day),
+            Muscle("Tabla Nutricional", R.drawable.nutritional_table),
+            Muscle("Gym Notes",R.drawable.gymnotes) //share references
 
         )
 
